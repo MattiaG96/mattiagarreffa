@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,7 +20,247 @@
 </head>
 
 <body>
-    <img src="img/desk_background.jpg" class="img-full-screen">
+
+    <!-- START HEADER PAGE -->
+    <div class="img-full-screen screen-center"
+        style="background-image: url('img/network.png'); background-position: center; background-repeat: no-repeat;">
+        <div>
+            <div class="container" style="border: rgb(48, 48, 48) 20px solid; border-radius: 10px; padding: 20px;">
+                <br>
+                <div class="row">
+                    <div class="col" style="background-color: rgb(36, 36, 36); margin: 5px;">
+                        <div class="row" style="background-color: rgb(48, 48, 48);">
+                            <div class="col">
+                                <p>Editor</p>
+                            </div>
+                            <div class="col text-end">
+                                <i class="far fa-window-minimize" style="padding: 3px; color: white;"></i>
+                                <i class="far fa-window-maximize" style="padding: 3px; color: white;"></i>
+                                <i class="fas fa-times" style="padding: 3px; color: white;"></i>
+                            </div>
+                        </div>
+                        <p style="color: white; font-size: larger;">
+                            <span style="visibility: hidden;">__</span><span style="color: rgb(126, 0, 143);">def</span>
+                            pres(<span style="color: rgba(65, 105, 225, 0.8);">career</span>):<br>
+                            <span style="visibility: hidden;">__</span><span
+                                style="visibility: hidden;">_____</span><span style="color: red;">print</span>(<span
+                                style="color: royalblue;">career</span>)<br>
+                            <span style="visibility: hidden;">__</span><br>
+                            <span style="visibility: hidden;">__</span><span
+                                style="color: rgb(216, 216, 88);">pres</span>(<span style="color: red;">"Software
+                                Developer"</span>) <span id="rectscore" style="font-weight: bold;">|</span>
+                        </p>
+                    </div>
+                    <div class="col" style=" margin: 5px;">
+                        <div class="row" style="background-color: rgb(214, 214, 214);">
+                            <div class="col">
+                                <p style="color: rgb(36, 36, 36);">Console</p>
+                            </div>
+                            <div class="col text-end">
+                                <i class="far fa-window-minimize" style="padding: 3px; color: rgb(36, 36, 36);"></i>
+                                <i class="far fa-window-maximize" style="padding: 3px; color: rgb(36, 36, 36);"></i>
+                                <i class="fas fa-times" style="padding: 3px; color: rgb(36, 36, 36);"></i>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: black;">
+                            <div class="col">
+                                <br>
+                                <span style="color: rgb(0, 160, 0);">~/ $ : </span><span
+                                    style="visibility: hidden;">__</span><span>python
+                                    pres.py</span>
+
+                                <h1 style="color: white; margin-bottom: 40px; margin-top: 30px;">Software Developer
+                                    <span id="underscore" style="font-weight: bold;">_</span>
+                                </h1>
+                                <script>
+                                    function hideUnderscore() {
+                                        document.getElementById("underscore").style.visibility = 'hidden';
+                                        document.getElementById("rectscore").style.visibility = 'hidden';
+                                        setTimeout(() => {
+                                            showUnderscore();
+                                        }, 500);
+                                    }
+
+                                    function showUnderscore() {
+                                        document.getElementById("underscore").style.visibility = 'visible';
+                                        document.getElementById("rectscore").style.visibility = 'visible';
+                                        setTimeout(() => {
+                                            hideUnderscore();
+                                        }, 500);
+                                    }
+
+                                    hideUnderscore()
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row"
+                    style="background-color: rgba(36, 36, 36, 0.8); margin-left: -20px; margin-right: -20px; margin-bottom: -20px; padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-1 my-auto">
+                        <div>
+                            <a href="#" class="a-navigation"><i class="fab fa-windows"></i></a>
+                        </div>
+                    </div>
+                    <div class="col my-auto">
+                        <a class="a-navigation" href="#aboutMeAnchor">Me</a>
+                        <span style="visibility: hidden;">_</span>
+                        <a class="a-navigation" href="#servicesAnchor">Services</a>
+                        <span style="visibility: hidden;">_</span>
+                        <a class="a-navigation" href="#projectsAnchor">Projects</a>
+                        <span style="visibility: hidden;">_</span>
+                        <a class="a-navigation" href="#contactAnchor">Contact</a>
+                    </div>
+                    <div class="col-1 text-end">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-1" style="border: rgb(48, 48, 48) 1px solid; height: 50px; background-color: rgb(48, 48, 48);"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4"
+                        style="border: rgb(48, 48, 48) 10px solid; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER PAGE -->
+
+    <!-- START ABOUT ME ANCHOR -->
+    <div style="background-color: white;" id="aboutMeAnchor">
+        <div class="container-fluid">
+            <a href="#" style="font-size: xx-large; margin: 20px;"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="container">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <img src="img/me.JPG" height="100%" width="100%" style="object-fit: cover;">
+                </div>
+                <div class="col">
+                    <h3 style="color: rgb(36, 36, 36); margin-left: 10px; margin-right: 10px;">About me</h3>
+                    <div style="border: rgb(36, 36, 36) 1px solid; margin: 10px;"></div>
+                    <p style="color: rgb(36, 36, 36); margin-left: 10px; margin-right: 10px;">
+                        Hi!
+                        <br>My name is Mattia Garreffa and I'm a Freelance self-taught <b>Software Developer.</b>
+                        <br>
+                        <br>I have extensive business experience from projects aimed at individuals to published
+                        projects.
+                        <br>
+                        <br>I've studied:
+                        <br><span style="visibility: hidden;">____</span>- Python development.
+                        <br><span style="visibility: hidden;">____</span>- Android development.
+                        <br><span style="visibility: hidden;">____</span>- iOS development.
+                        <br><span style="visibility: hidden;">____</span>- Web development.
+                        <br><span style="visibility: hidden;">____</span>- Arduino development.
+                        <br>
+                        <br>I'm passionate about technology, organized, perseverant and I'm not scared of new
+                        challenges.
+                        <br>
+                        <br>If I can do anything for you click <a href="#contactAnchor">here</a> to contact with me.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- END ABOUT ME ANCHOR -->
+
+    <!-- START SERVICES ANCHOR -->
+    <div id="servicesAnchor"
+        style="background-image: url('img/network.png'); background-position: center; background-repeat: no-repeat;">
+        <div class="container-fluid">
+            <a href="#" style="font-size: xx-large; margin: 20px;"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Website development
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Web App development
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Mobile App development
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Script development
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Arduinos development
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="col transparent-jumbotron">
+                    <div class="text-center">
+                        <h4 style="color: rgb(36, 36, 36);">
+                            Desktop App development
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- END SERVICES ANCHOR-->
+
+    <!-- START PROJECTS ANCHOR -->
+    <div id="projectsAnchor" style="background-color: white;">
+        <div class="container-fluid">
+            <a href="#" style="font-size: xx-large; margin: 20px;"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+    <!-- END PROJECTS ANCHOR-->
+
+    <!-- START CONTACT ANCHOR -->
+    <div id="contactAnchor"
+        style="background-image: url('img/network.png'); background-position: center; background-repeat: no-repeat;">
+        <div class="container-fluid">
+            <a href="#" style="font-size: xx-large; margin: 20px;"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+    <!-- END CONTACT ANCHOR-->
+
+
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
