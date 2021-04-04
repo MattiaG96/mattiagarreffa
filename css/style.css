@@ -38,4 +38,54 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     margin: 5px;
+    padding: 20px;
+}
+
+.dark-gray-point {
+    background-color: rgb(36, 36, 36);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.btn-royalblue {
+    background-color: royalblue !important;
+    border: royalblue 1px solid !important;
+    color: white !important;
+}
+
+.btn-royalblue:hover {
+    background-color: rgba(65, 105, 225, 0) !important;
+    border: royalblue 1px solid !important;
+    color: royalblue !important;
+}
+
+.img-round-100px {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border:rgb(36, 36, 36) 1px solid;
+    margin: 5px;
+}
+
+.btnProjects:hover {
+    color: rgba(36, 36, 36, 0.5);
+}
+
+.a-modals {
+    color: rgb(36, 36, 36) !important;
+    text-decoration: none;
+}
+
+.a-modals:hover {
+    color: royalblue !important;
+    text-decoration: underline;
+}
+
+.img-worked-with {
+    opacity: 1;
+}
+
+.img-worked-with:hover {
+    opacity: 0.5;
 }
