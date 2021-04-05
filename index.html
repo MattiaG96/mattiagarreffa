@@ -524,6 +524,77 @@
         <div class="container-fluid">
             <a href="#" style="font-size: xx-large; margin: 20px;"><i class="fas fa-chevron-up"></i></a>
         </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row" style="color: rgb(36, 36, 36);">
+                <div class="col">
+                    <h4>
+                        You can find me here:
+                    </h4>
+                    <br>
+                    <div style="margin: 20px;">
+                        <i class="fab fa-linkedin" style="margin: 5px;"></i><a class="a-contact" target="_blank"
+                            href="https://www.linkedin.com/in/mattia-garreffa-026570207/">LinkedIn</a>
+                    </div>
+                    <div style="margin: 20px;">
+                        <i class="fab fa-github" style="margin: 5px;"></i><a class="a-contact" target="_blank"
+                            href="https://github.com/MattiaG96">Github</a>
+                    </div>
+                    <div style="margin: 20px;">
+                        <a class="a-contact" target="_blank" href="https://www.freelancer.com/u/MattiaG1996"><img
+                                src="img/freelancer_logo.png" height="20px">Freelancer</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>
+                        Or contact with me here:
+                    </h4>
+                    <br>
+                    <div style="margin: 20px;">
+                        <i class="far fa-envelope" style="margin: 5px;"></i><a class="a-contact"
+                            href="mailto:mattia.garreffa96@gmail.com?subject=Contact with you.">mattia.garreffa96@gmail.com</a>
+                    </div>
+                    <div style="margin: 20px;">
+                        <i class="fab fa-telegram-plane" style="margin: 5px;"></i><a id="telegramHref"
+                            class="a-contact popup" href="MattiaG96" onclick="copyURI(event)">MattiaG96
+                            <span class="popuptext" id="myPopup">Telegram username copied!</span>
+                        </a>
+                        <script>
+                            function copyURI(evt) {
+                                evt.preventDefault();
+                                navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+                                    showPopUp();
+                                }).catch(() => {
+                                    alert('There was an error, please try again later.');
+                                });
+                            }
+
+                            function showPopUp() {
+                                var popup = document.getElementById("myPopup");
+                                popup.classList.toggle('show');
+                                setTimeout(() => {
+                                    popup.classList.toggle('hide');
+                                    setTimeout(() => {
+                                        popup.style.visibility = 'hidden';
+                                    }, 1000);
+                                }, 2500);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <p style="color: rgba(36, 36, 36, 0.5);">Copyright © Mattia Garreffa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- END CONTACT ANCHOR-->
 
