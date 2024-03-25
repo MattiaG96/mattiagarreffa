@@ -1,0 +1,33 @@
+.banner-root {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-root > div {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-root > div > button {
+    font-size: 20px;
+    border-top: 1px orange solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: transparent;
+    color: orange;
+    padding-block: 10px;
+    cursor: pointer;
+}
