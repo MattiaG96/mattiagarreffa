@@ -9,7 +9,7 @@ export const Banner: FC<BannerProps> = ({ message, onClose }) => {
   return (
     <div className="banner-root">
       <div>
-        <h3 style={{ textAlign: 'center' }}>{message}</h3>
+        <h3 style={{ textAlign: 'center', paddingInline: 10 }}>{message}</h3>
         <button type="button" onClick={onClose}>
           Ok
         </button>

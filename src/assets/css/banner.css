@@ -31,3 +31,9 @@
     padding-block: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .banner-root > div {
+        width: 90%;
+    }
+}
