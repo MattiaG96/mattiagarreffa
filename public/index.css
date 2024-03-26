@@ -1,0 +1,27 @@
+html {
+    font-family: "Poppins", sans-serif;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 45%, rgba(87, 87, 87, 1) 100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

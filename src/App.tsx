@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import me from './assets/img/me.png';
+import me from './assets/img/me.webp';
 import programming from './assets/img/programming.png';
 import mobile from './assets/img/mobile.png';
 import server from './assets/img/server.png';
@@ -79,23 +79,23 @@ export const App: FC = () => {
         {/* NAVBAR */}
         <div className="navbar">
           <div>
-            <a
+            <button
               id="about_me"
               className="navbar-selected"
               onClick={navbarNavigation}
             >
               {t('about_me')}
-            </a>
-            <a id="services" className="" onClick={navbarNavigation}>
+            </button>
+            <button id="services" className="" onClick={navbarNavigation}>
               {t('services')}
-            </a>
-            <a id="companies" className="" onClick={navbarNavigation}>
+            </button>
+            <button id="companies" className="" onClick={navbarNavigation}>
               {t('companies')}
-            </a>
-            <a id="contact" className="" onClick={navbarNavigation}>
+            </button>
+            <button id="contact" className="" onClick={navbarNavigation}>
               {t('contact')}
-            </a>
-            <a onClick={downloadCV}>{t('download_cv')}</a>
+            </button>
+            <button onClick={downloadCV}>{t('download_cv')}</button>
           </div>
         </div>
         {/* ABOUT ME */}
@@ -115,7 +115,7 @@ export const App: FC = () => {
             <p>{t('presentation')}</p>
           </div>
           <div>
-            <img src={me} loading="lazy" />
+            <img src={me} loading="lazy" alt="about me" width={500} height={500} />
           </div>
         </div>
         {/* SERVICES */}
@@ -136,17 +136,17 @@ export const App: FC = () => {
           <div className="service-card-container">
             <div className="service-card">
               <p>{t('web_development')}</p>
-              <img src={programming} loading="lazy" />
+              <img src={programming} loading="lazy" alt="programming" />
             </div>
 
             <div className="service-card">
               <p>{t('mobile_development')}</p>
-              <img src={mobile} loading="lazy" />
+              <img src={mobile} loading="lazy" alt="mobile" />
             </div>
 
             <div className="service-card">
               <p>{t('backend_development')}</p>
-              <img src={server} loading="lazy" />
+              <img src={server} loading="lazy" alt="server" />
             </div>
           </div>
         </div>
@@ -170,28 +170,28 @@ export const App: FC = () => {
             <a
               href="https://www.nologis.com"
               target="_blank"
-              rel="nonreferer"
+              rel="noreferrer"
               className="service-card"
             >
-              <img src={nologis} loading="lazy" />
+              <img src={nologis} loading="lazy" alt="nologis" />
               <p style={{ textAlign: 'justify' }}>{t('nologis')}</p>
             </a>
             <a
               href="https://www.olyns.com"
               target="_blank"
-              rel="nonreferer"
+              rel="noreferrer"
               className="service-card"
             >
-              <img src={olyns} loading="lazy" />
+              <img src={olyns} loading="lazy" alt="olyns" />
               <p style={{ textAlign: 'justify' }}>{t('olyns')}</p>
             </a>
             <a
               href="https://www.mdbtechsolutions.com"
               target="_blank"
-              rel="nonreferer"
+              rel="noreferrer"
               className="service-card"
             >
-              <img src={mdb} loading="lazy" />
+              <img src={mdb} loading="lazy" alt="mdb tech solutions" />
 
               <p style={{ textAlign: 'justify' }}>{t('mdb_tech')}</p>
             </a>
@@ -223,6 +223,7 @@ export const App: FC = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                color: 'black',
               }}
             >
               <i
@@ -246,7 +247,7 @@ export const App: FC = () => {
           <a
             href="https://www.linkedin.com/in/mattia-garreffa"
             target="_blank"
-            rel="nonreferer"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
@@ -254,7 +255,7 @@ export const App: FC = () => {
           <a
             href="https://github.com/MattiaG96"
             target="_blank"
-            rel="nonreferer"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-github"></i>
           </a>
